@@ -1,0 +1,28 @@
+.index a {
+  color: black; text-decoration: none;
+  display: block;
+  padding: 0.2em;
+
+  border-bottom: 1px solid gainsboro;
+}
+
+ul.index:not(:first-child) {
+  background-color: gainsboro;    padding-left: 1em;
+}
+
+li {
+  background-color: white;
+}
+
+li  {
+  list-style-type: none;
+}
+
+.index {
+  padding: 0px;
+  margin-top: 0px;
+}
+
+.index a:hover {
+  background-color: gainsboro;
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="data/data.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="styles/index-list.css">
+  <!-- he de fer que les imatges del fons carreguin on-load; -->
+  <!-- potser puc fer-ho carregant-les en un div que estigui en mode display: none -->
+  <style> /*general styling*/
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    * {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0px; padding: 0px;
+    }
+    :root {
+      --color: #ffc107;
+    }
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+
+  <style>
+    figure > div{ width: 71vw; overflow-x: scroll}
+    p {margin-top: 1em;}
+  </style>
+
+  <style>
+    .arrow-img {
+      width: 1.8em;
+    }
+  </style>
+</head>
+<body style="margin: 0; overflow-x: hidden; overflow-y: hidden">
+  <header style="height: 15vh; background-color: white; position: relative; top: 0; z-index: 5;">
+    <div id="logo" style="width: fit-content; margin: auto; height: 100%">
+      <img src="https://associacioesclat.com/wp-content/uploads/2018/07/associacio-esclat-logo.png" alt="logotip d'esclat grup social" style="height: 100%">
+    </div>
+  </header>
+
+  <div style="display: flex; height: 85vh; border-top: 1px solid gainsboro; background-color: gainsboro">
+    <nav style="overflow: scroll; width: 25vw; position: relative; z-index: 5; border-right: 1px solid gainsboro; background-color: white">
+      <ul class="index">
+        <li> <a>1 Part estratègica</a>
+        <ul class="index">
+          <li><a>1.1 Introducció</a>
+            <ul class="index">
+              <li><a>1.1.1. Enllaç estratègia digital de centre (EDC)</a></li>
+              <li><a>1.1.2. Contextualització</a></li>
+              <li><a>1.1.3. Visió del centre</a></li>
+              <li><a>1.1.4. Infraestructura</a></li>
+              <li><a>1.1.5. Pràctiques del centre d’ús i aplicació de la tecnologia</a></li>
+              <li><a>1.1.6. Procés d’elaboració</a></li>
+              <li><a>1.1.7. Integració de l’Estratègia Digital de Centre al Projecte</a></li>
+            </ul>
+          </li>
+          <li><a>1.2 Diagnosi</a>
+            <ul class="index">
+              <li><a>1.2.1. Eines utilitzades en la diagnosi</a></li>
+              <li><a>1.2.2. Aspectes destacats</a></li>
+              <li><a>1.2.3. Objectius</a></li>
+            </ul>
+          </li>
+          <li><a>1.3. Planificació de les activitats a desenvolupar</a>
+            <ul class="index">
+              <li><a>1.3.1. Descripció i temporització</a></li>
+            </ul>
+          </li>
+          <li><a>1.4. Avaluació</a></li>
+        </ul>
+        </li>
+
+        <li> <a>2 Cultura digital</a>
+          <ul class="index">
+            <li><a>2.1 Documentació del centre</a>
+              <ul class="index">
+                <li><a>2.1.1. PEC</a></li>
+                <li><a>2.1.2. NOFC</a></li>
+              </ul>
+            </li>
+            <li><a>2.2 Pla d'acollida digital</a>
+              <ul class="index">
+                <li><a>2.2.1. Docents</a></li>
+                <li><a>2.2.2. Alumnat i families</a></li>
+              </ul>
+            </li>
+            <li><a>2.3. Pla de comunicació del centre</a>
+              <ul class="index">
+                <li><a>2.3.1. Portal web</a></li>
+                <li><a>2.3.2. Xarxes</a></li>
+                <li><a>2.3.3. Comunicació amb les famílies</a></li>
+                <li><a>2.3.4. Comunicació amb els docents</a></li>
+              </ul>
+            </li>
+
+            <li><a>2.4. Inventari digital</a>
+              <ul class="index">
+                <li><a>2.4.1. Equipament informàtic</a></li>
+                <li><a>2.4.2. Robòtica</a></li>
+                <li><a>2.4.3. Impressió</a></li>
+              </ul>
+            </li>
+          </ul>
+          </li>
+
+      </ul>
+    </nav>
+
+  <div id="container" style="overflow-y: scroll; overflow-x: hidden; background-size: cover; background-image: url('https://www.viaempresa.cat/uploads/s1/20/57/77/00/foto1-esclat-tossa-de-mar_11_640x380.jpeg')">
+    <main style="background-color: white;  position: relative; z-index: 0; width: 75vw;
+    left: 0vw; top: 0px;
+    transition: left 0.3s ease-out, top 0.3s ease-out;
+    padding: 1.5em
+    ">
+      <div style="display: flex; justify-content: space-between; margin-bottom: 1em;">
+        <img id="prev-arrow" class="arrow-img" style="transform: rotate(180deg);" src="arrow.svg" alt="previous section">
+        <img id="next-arrow" class="arrow-img" src="arrow.svg" alt="next section">
+      </div>
+
+      <div style="max-width: 70ch">
+        <h2>Title</h2>
+        <p> La tecnologia és present a la nostra societat i fer-ne un bon ús de les eines digitals és fonamental per treure el millor profit des del punt de vista pedagògic i organitzatiu.
+        </p> <p>  En <b>l’àmbit pedagògic</b> treballem amb diversos recursos digitals com Tobii, Arasaac, Youtube, commutadors, comunicadors, pantalla tàctil i tablets que permeten desenvolupar diferents activitats a l’aula com per exemple, plafons de comunicació, plàstica, conte vivencial, taller de cuina, entre d’altres.
+        </p> <p>  En el següent quadre es mostra la relació entre els recursos digitals que disposem, per quines activitats pedagògiques els utilitzem i aquestes, com queden englobades en els 4 eixos i competències digitals del nou currículum.
+        </p> <p>  <figure><div><img class="article-img" src="images/tables/Imatge 1.png" alt="Taula 1"></div><figcaption>Imatge 1</figcaption></figure>
+        </p> <p>  <figure><div><img style="height: 31em" class="article-img" src="images/tables/Imatge 2.png" alt="Taula 2"></div><figcaption>Imatge 2</figcaption></figure>
+        </p> <p> En <b>l'àmbit organitzatiu</b>, l’escola així com tota l'entitat Esclat Grup Social, està immersa en un procés de digitalització que permet obtenir de manera segura i ràpida tota la informació rellevant per dur a terme la nostra tasca.
+        </p> <p> Els professionals de l’escola treballen amb el programa Social Sic 	 com a software on queden registrades les activitats de l’alumnat i  la informació relacionada a aquest.
+        </p> <p> També s’utilitzen unitats compartides on queden recollits els expedients, projectes i resta d’informació relacionada amb l’escola i l’entitat.
+        </p>
+      </div>
+    </main>
+  </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+<script>
+  // header = document.querySelector("header")
+
+  // document.addEventListener("scroll", scroll)
+
+  // initialHeaderHeight = header.style.height
+  // function scroll() {
+  //   console.log("scroll")
+  //   header.style.height = "7vh"
+  //   if (window.scrollY === 0) {
+  //     header.style.height = initialHeaderHeight
+  //   }
+  // }
+</script>
+
+<script>
+  main = document.querySelector("main")
+
+  mainWidth = main.style.width
+  initialTransition = main.style.transition
+  function transitionLeft() {
+    main.style.left = mainWidth
+    setTimeout(function() {
+      main.style.transition = "left 0s ease-out"
+      main.style.left = "-" + mainWidth
+    }, 400);
+
+    setTimeout(() => {
+      main.style.transition = initialTransition
+      main.style.left = "0vw"
+    }, 800);
+    changeBackgroundImage()
+  }
+
+  function transitionRight() {
+    main.style.left = "-" + mainWidth
+    console.log(mainWidth)
+    setTimeout(function() {
+      main.style.transition = "left 0s ease-out"
+      main.style.left = mainWidth
+    }, 400);
+
+    setTimeout(() => {
+      main.style.transition = initialTransition
+      main.style.left = "0vw"
+    }, 800);
+    changeBackgroundImage()
+  }
+
+  function transitionY() {
+    mainHeight = document.querySelector("main").offsetHeight
+    console.log("main container has a height of " + mainHeight)
+    console.log("main top value is " + main.style.top)
+    console.log("main top value should be -" + mainHeight)
+
+    setTimeout(function() {
+      console.log("transition moment")
+      main.style.transition = "left 0.27s ease-out, top 0.27s ease-out"
+      main.style.top = "-" + mainHeight + "px"
+      // main.style.maxHeight = "85vh"
+      main.style.overflow = "hidden"
+    }, 0);
+    setTimeout(function() {
+      console.log("transition moment")
+      main.style.transition = "left 0s ease-out, top 0s ease-out"
+      main.style.top = mainHeight + "px"
+    }, 401);
+
+    setTimeout(() => {
+      main.style.transition = initialTransition
+      main.style.top = "0px"
+
+    }, 800);
+    changeBackgroundImage()
+
+
+
+  }
+
+  document.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', transitionY);
+  });
+
+  document.querySelector("#prev-arrow").addEventListener('click', transitionLeft)
+  document.querySelector("#next-arrow").addEventListener('click', transitionRight)
+
+  document.addEventListener('keydown', function(event) {
+    if (event.code === 'ArrowLeft') {
+      transitionLeft()
+    }
+    if (event.code === 'ArrowRight') {
+      transitionRight()
+    }
+  });
+
+currentImageIndex = 0
+  function changeBackgroundImage() {
+    images =
+    ["https://www.viaempresa.cat/uploads/s1/20/57/77/00/foto1-esclat-tossa-de-mar_11_640x380.jpeg",
+    "https://www.sweetpress.com/image/1646652473907-Ocu-encuesta-supermercados.jpg",
+    "https://catalunyadiari.com/filesedc/uploads/other/2020/02/1200/el-grup-bonpreu-ha-afegit-entregues-a-domicilis-en-diverses-localitats-el-valles-occidental.webp",
+    "https://www.cpnl.cat/media/upload/cache/Bonpreu_1674639783.jpg"]
+    if(currentImageIndex == images.length){currentImageIndex = 0}
+
+    url = images[currentImageIndex]
+    document.querySelector("#container").style.backgroundImage = "url('" + url + "')"
+    currentImageIndex += 1
+  }
+</script>
